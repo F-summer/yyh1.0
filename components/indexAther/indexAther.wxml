@@ -1,0 +1,26 @@
+<!--components/indexAther/indexAther.wxml-->
+<view class='indexAther'>
+  <view class='sea-add-cont'>
+    <navigator url='/pages/discover/discover?index=0' hover-class='none' class='city'>
+      <text class='text'>{{cityName.name}}</text>
+      <image class='icon' src='/images/icon_select.png'></image>
+    </navigator>
+    <view class='search-cont'>
+      <view class='search' bindtap='goSearch'>
+        <image class='search-icon' src='/images/icon_search.png'></image>
+        <text class='text'>搜索您感兴趣的群</text>
+      </view>
+      <!-- <view class='add-btn' bindtap='goBuild'>
+        建群
+      </view> -->
+    </view>
+  </view>
+  <view class='recommend-cont'>
+    <image class='fire' src='/images/icon_fire.png'></image>
+    <view class='recommend-info'>
+      <text class="name">热门搜索:</text>
+      <text class="name word" data-name="{{item}}" bindtap='searchFun' wx:for="{{arr}}" wx:key="{{index}}" wx:if="{{index<4}}">{{item}}</text>
+    </view>
+  </view>
+  <image src='/images/jianqun.png' class='jianqun' bindtap='goBuild'></image>
+</view>

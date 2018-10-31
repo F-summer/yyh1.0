@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<image wx:if="{{showLoading}}" class='loading' src='/images/loading.gif'></image>
+<view style="display:{{showLoading?'none':'block'}}" class='content'>
+  <carousel></carousel>
+  <indexAther cityName="{{cityName}}" id="indexAther"></indexAther>
+  <flockList isfilex="{{isfilex}}" businessName="{{businessName}}" cityName="{{cityName}}" themeName="{{themeName}}" bind:resetFun="reset" address="{{address}}" bind:myevent="changeText" id="flockList" pageIndex="{{pageIndex}}"></flockList>
+   
+</view>

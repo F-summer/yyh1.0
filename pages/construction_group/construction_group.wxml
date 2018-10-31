@@ -1,0 +1,31 @@
+<!-- pages/construction_group/construction_group.wxml -->
+<view class='container'>
+  <view class="top-search">
+    <image src="/images/icon_search.png" alt="" class="search-icon"></image>
+    <input type="text" placeholder="搜索待建群" bindinput="searchWord" placeholder-class="placeholder" />
+  </view>
+  <view class="construction-group">
+    <view class="sort" bindtap='sortStart'>
+      <image class="sort-img" src="/images/construction-group/sort.png"></image>
+      <view class="sort-text">{{sort}}</view>
+    </view>
+    <view class="apply" bindtap='applyFun'>
+      <view>申请建群</view>
+      <image src="/images/construction-group/group.png"></image>
+    </view>
+  </view>
+  <view class="group-list">
+    <view class="want-group">想快点建群？点击“邀请”，分享给好友吧！</view>
+    <block wx:for="{{groupList}}" wx:key="index">
+      <g-groupList group="{{item}}" bind:zhuli="zhuli" id="zhuli" fxrid="{{FXRid}}"></g-groupList>
+    </block>
+    <view class='bottom'>{{load_more}}</view>
+  </view>
+
+  <g-sort show="{{sortShow}}" bind:sortStyle="sortStyle"></g-sort>
+
+
+
+
+
+</view>

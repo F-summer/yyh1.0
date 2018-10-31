@@ -1,0 +1,19 @@
+<!--pages/searchPage/searchPage.wxml-->
+<view class='indexAther'>
+  <view class='sea-add-cont'>
+   <view class='search'>
+     <image class='search-icon' src='/images/icon_search.png'></image>
+     <input bindblur='onSearch' value="{{getAtherVal}}" class='search-inp' placeholder='{{searchVal}}'></input>
+   </view>
+    <!-- <view class='cancer-btn' bindtap='cancerFun'>
+    搜索
+    </view> -->
+  </view>
+</view>
+<block wx:if="{{!haveResult}}">
+  <searchHeat getAtherVal="{{getAtherVal}}" bind:myevent="changSearchVal" ></searchHeat>
+</block>
+<block wx:if="{{haveResult}}">
+  <flockList headTop="headTop" bind:myevent="changeText" getAtherVal="{{getAtherVal}}" id="flockList"  pageIndex="{{pageIndex}}"></flockList>
+</block>
+

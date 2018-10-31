@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText":"待建群",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "g-groupList": "/components/invitation-group/invitation-group",
+    "g-sort":"/components/sort/sort"
+  },
+  "backgroundColor": "#f4f4f4"
+}

@@ -1,0 +1,17 @@
+<!--pages/choiceFlock/choiceFlock.wxml-->
+<view class='content'>
+  <navigator class='choice-info' hover-class="none" url='/pages/applyPage/applyPage?type=0'>
+    <image class='icon' src='/images/icon_choice_1.png'></image>
+    <view class='text-cont'>
+      <text class='title'>我要建业务群</text>
+      <text class='text'>和全国或您当地的业务简历联系</text>
+    </view>
+  </navigator>
+   <navigator class='choice-info down' hover-class="none" url='/pages/applyPage/applyPage?type=1'>
+    <image class='icon' src='/images/icon_choice_2.png'></image>
+    <view class='text-cont'>
+      <text class='title'>我要建主题群</text>
+      <text class='text'>讨论当下最热门医药主题</text>
+    </view>
+  </navigator>
+</view>

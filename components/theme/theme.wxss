@@ -1,0 +1,26 @@
+/* components/theme/theme.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.list-item{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.list-item image{
+  width: 30rpx;
+  height: 21rpx;
+}
+.active{
+  color: #2086ff;
+  font-size:30rpx;
+
+}
+.normal{
+  color: #333;
+  font-size: 30rpx;
+}

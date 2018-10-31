@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "indexAther": "/components/indexAther/indexAther",
+    "flockList": "/components/flockList/flockList",
+    "carousel":"/components/carousel/carousel"
+  },
+  "navigationBarTitleText": "发现",
+  "backgroundColor":"#f4f4f4"
+}

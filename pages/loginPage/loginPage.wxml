@@ -1,0 +1,10 @@
+<!--pages/loginPage/loginPage.wxml-->
+<view class='content'>
+  <image class='bg' src='/images/bg.jpg'></image>
+  <view class='cont'>
+    <image class='logo' src="/images/logo.png"></image>
+    <button class='btn' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">
+      登录授权
+    </button>
+  </view>
+</view>

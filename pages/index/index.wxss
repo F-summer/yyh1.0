@@ -1,0 +1,13 @@
+/* pages/index/index.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.loading{
+  width: 340rpx;
+  height: 196rpx;
+  position: fixed;
+  top: 50%;
+  margin-top: -180rpx;
+  left: 50%;
+  margin-left: -170rpx;
+}

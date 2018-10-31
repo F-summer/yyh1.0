@@ -1,0 +1,132 @@
+/* components/carousel/carousel.wxss */
+.swiper-container{
+  position: relative
+}
+.swiper{
+  width: 100%;
+  height: 300rpx;
+}
+.img{
+  width: 100%;
+  height: 300rpx;
+}
+
+.showTs{
+  position: absolute;
+  top: 32rpx;
+  left: 32rpx;
+	height: 60rx;
+	background-color: rgba(0, 0, 0, .4);
+	border-radius: 30rpx;
+  padding: 0 10rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  transition: 1s; 
+}
+.showTs.none{
+  opacity: 0
+}
+.showTs .left{
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.showTs .left .head{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.showTs .left .text{
+  font-size: 22rpx;
+	color: #ffffff;
+}
+.showTs .icon{
+  width: 10rpx;
+	height: 17rpx;
+}
+.alert-cont{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, .4);
+  padding: 56rpx 75rpx;
+}
+.alert-cont .show-img{
+  width: 100%;
+  height: 1094rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  padding:68rpx 94rpx;
+  position: relative;
+}
+.alert-cont .show-img .red-head{
+  position: absolute;
+  top: 40rpx;
+  width: 410rpx;
+  height: 51rpx;
+}
+.alert-cont .show-img .img{
+  width: 100%;
+  height: 810rpx;
+}
+.go-flock-btn{
+  position: relative;
+  width: 370rpx;
+	height: 88rpx;
+	background-color: #4284f7;
+	border-radius: 44rpx;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 32rpx;
+  margin-bottom: 16rpx;
+}
+.go-flock-btn .top-cont{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 30rpx;
+	color: #ffffff;
+}
+.go-flock-btn .top-cont .icon{
+  width: 41rpx;
+	height: 32rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+}
+.go-flock-btn .top-cont .txt{
+  vertical-align: middle;
+}
+.go-flock-btn .details_button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.alert-cont .show-img .text{
+  text-align: center;
+  display: block;
+  font-size: 24rpx;
+	color: #999999;
+}
+.search-num{
+  padding: 0 32rpx;
+  padding-bottom: 24rpx;
+  font-size: 24rpx;
+	color: #333333;
+}

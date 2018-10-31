@@ -1,0 +1,112 @@
+/* components/invitation-group.wxss */
+
+.container {
+  width: 686rpx;
+  height: 240rpx;
+  padding: 0 32rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 26rpx;
+}
+
+.remain-time {
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.icon-red {
+  width: 4rpx;
+  height: 20rpx;
+  background-color: red;
+  margin-right: 20rpx;
+}
+
+.date {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.group-info {
+  margin-top: 24rpx;
+  display: flex;
+}
+
+.group-img {
+  width: 120rpx;
+  height: 120rpx;
+  background-color: aqua;
+  border-radius: 20rpx;
+  margin-right: 24rpx;
+}
+
+.apply-info {
+  width: 480rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-out {
+  width: 100%;
+  padding-right: 20rpx;
+}
+
+.group-name {
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 26rpx;
+  margin-top: 14rpx;
+}
+
+.zhuli-info {
+  font-size: 22rpx;
+  color: #333;
+  margin-bottom: 14rpx;
+}
+
+.progress {
+  border-radius: 10rpx;
+  overflow: hidden;
+  width: 100%;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-list button {
+  width: 120rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border: 1px solid #ff5252;
+  border-radius: 38rpx;
+  font-size: 24rpx;
+}
+
+.invitatebtn {
+  color: #ff5252;
+  background-color: #fff6f6;
+}
+
+.zhulibtn {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+button::after {
+  border: none;
+}
+
+.yizhuli {
+  text-align: center;
+  width: 120rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background-color: #ffcbcb;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 38rpx;
+}

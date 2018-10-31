@@ -1,0 +1,8 @@
+<!--components/theme/theme.wxml-->
+<view class="container">
+  <view wx:for="{{list}}" wx:key="index" wx:for-index='index' bindtap='choice'> 
+    <view class="list-item {{indexCho==index?'active':'normal'}}" data-ids="{{index}}" data-id='{{item.id}}' data-name="{{item.name}}">
+      {{item.name}} <image src="{{indexCho==index?'/images/yes.png':'./images/white.jpg'}}"> </image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "flockList": "/components/flockList/flockList",
+    "searchHeat": "/components/searchHeat/searchHeat"
+  },
+  "navigationBarTitleText": "搜索群"
+}

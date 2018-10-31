@@ -1,0 +1,28 @@
+<!-- components/invitation-group.wxml -->
+<view class="container">
+  <view class="remain-time">
+    <view class="icon-red"></view>
+    <view class="date">{{clock}}</view>
+  </view>
+  <view class="group-info">
+    <image class="group-img" src="{{help_num==group.set_num?'/images/construction-group/ed.png':'/images/construction-group/ing.png'}}"></image>
+    <view class="apply-info">
+      <view class="group-out">
+        <view class="group-name">{{group.name}}</view>
+        <view class="zhuli-info">助力情况：{{help_num}}/{{group.set_num}}</view>
+        <progress activeColor="#ffa643" class="progress" percent="{{percent}}" active />
+      </view>
+      <view class="btn-list">
+        <button class="invitatebtn" data-id="{{group.id}}"  open-type="share" data-name="{{group.name}}" data-openid="{{group.open_id}}">
+          邀请
+        </button>
+        <block wx:if="{{help == 0}}">
+          <button class="zhulibtn" bindtap='zhuli' data-id="{{group.id}}" data-openid="{{group.open_id}}">助力</button>
+        </block>
+        <block wx:else>
+          <view class="yizhuli">已助力</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
